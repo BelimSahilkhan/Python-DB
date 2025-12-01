@@ -5,7 +5,6 @@ root = Tk();
 root.title("School System");
 data = "";
 
-# ---------- DATABASE ----------
 def init():
     cnn = sq.connect("My.db");
     cursor = cnn.cursor();
@@ -98,4 +97,5 @@ btn1 = Button(gp1, text="Save Student", command=insert_data)
 btn1.place(x=100, y=150)
 
 root.geometry("5020x750")
+
 root.mainloop()
